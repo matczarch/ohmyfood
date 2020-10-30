@@ -1,0 +1,24 @@
+#le-menu
+{
+    background-color: grey;
+}
+#banniere img
+{
+    width: 100%;
+    height: auto;
+}
+.choix-1-texte
+{
+    display: flex;
+    border: 1px solid black;
+    
+
+}
+.choix-1
+{
+    background-color: white; 
+}
+.c1
+{
+    margin-right: 200px;
+}
