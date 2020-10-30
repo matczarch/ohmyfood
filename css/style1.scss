@@ -1,0 +1,53 @@
+header
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    .retour
+    {
+        width: 50px;
+        margin-right: 200px; 
+        
+        height: auto;
+    }
+}
+.banniere img
+{
+    position: static;
+    width: 100%;
+    height: 10%; 
+}
+.le-menu
+{
+    border-radius: 20%;
+    position: relative;
+    left: 30px; 
+    top: 20px;
+    .favorit
+    {
+        display: flex; 
+        border: 1px solid black;
+        align-items: center;
+        justify-content: center;
+
+        img
+        {
+            width: 3%;
+            height: 50%;
+
+            margin-left: 120px;  
+        }
+    }
+}
+.choix-1
+{
+    background-color: white;
+    .choix-1-texte
+    {
+        display: flex; 
+        .c1
+        {
+            margin-right: 200px;
+        }
+    }
+}

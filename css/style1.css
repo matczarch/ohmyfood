@@ -1,0 +1,62 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+header .retour {
+  width: 50px;
+  margin-right: 200px;
+  height: auto;
+}
+
+.banniere img {
+  position: static;
+  width: 100%;
+  height: 10%;
+}
+
+.le-menu {
+  border-radius: 20%;
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+
+.le-menu .favorit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.le-menu .favorit img {
+  width: 3%;
+  height: 50%;
+  margin-left: 120px;
+}
+
+.choix-1 {
+  background-color: white;
+}
+
+.choix-1 .choix-1-texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.choix-1 .choix-1-texte .c1 {
+  margin-right: 200px;
+}
+/*# sourceMappingURL=style1.css.map */
