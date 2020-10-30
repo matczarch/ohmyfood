@@ -19,6 +19,7 @@ header
 }
 .le-menu
 {
+    width: 100%;
     border-radius: 20%;
     position: relative;
     left: 30px; 
@@ -49,5 +50,15 @@ header
         {
             margin-right: 200px;
         }
+    }
+}
+footer
+{
+    background-color: #455A64; 
+    img 
+    {
+        width: 30px; 
+        height: auto; 
+        margin-right: 20px; 
     }
 }
