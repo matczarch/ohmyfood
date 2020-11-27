@@ -6,15 +6,39 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 100px;
+}
+
+header img {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+header a {
+  width: 40px;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  border: 1px solid red;
 }
 
 header .retour {
-  width: 50px;
-  margin-right: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
   height: auto;
 }
 
@@ -91,24 +115,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  overflow: hidden;
   margin-left: 10px;
 }
 
 .choix-1 .choix-1-texte .c1 {
-  min-width: 100px;
-  margin-right: 200px;
+  min-width: 250px;
+  position: relative;
 }
 
 .choix-1 .choix-1-texte .prix {
-  width: 200px;
+  width: auto;
   height: auto;
   margin: 0px;
   margin-left: 0px;
-  position: relative;
-  left: -20px;
-  padding-left: -20px;
+  position: absolute;
+  right: 30px;
 }
 
 footer {
