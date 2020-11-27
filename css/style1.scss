@@ -1,3 +1,4 @@
+
 header
 {
     display: flex;
@@ -11,6 +12,9 @@ header
         height: auto;
     }
 }
+body{
+    background-color: #ECEFF1;
+}
 .banniere img
 {
     position: static;
@@ -20,29 +24,41 @@ header
 .le-menu
 {
     width: 100%;
-    border-radius: 20%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 1px solid black; 
     position: relative;
-    left: 30px; 
-    top: 20px;
+    
+    
+
     .favorit
     {
         display: flex; 
-        border: 1px solid black;
+        color: black; 
+        font-family: 'Roboto';
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        h1
+        {
+            margin-left: 20px; 
+        }
 
         img
         {
-            width: 3%;
+            width: 10%;
             height: 50%;
 
-            margin-left: 120px;  
+            margin-right: 20px;  
         }
     }
 }
 .choix-1
-{
+{ 
+    border: 1px solid black; 
+    margin: 10px; 
     background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gray;
     .choix-1-texte
     {
         display: flex; 
@@ -57,8 +73,8 @@ footer
     background-color: #455A64; 
     img 
     {
-        width: 30px; 
+        width: 15px; 
         height: auto; 
-        margin-right: 20px; 
+        margin-right: 10px; 
     }
 }
