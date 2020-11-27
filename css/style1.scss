@@ -1,4 +1,7 @@
-
+p
+{
+    font-family: Roboto;
+}
 header
 {
     display: flex;
@@ -23,11 +26,13 @@ body{
 }
 .le-menu
 {
+    background-color: #ECEFF1; 
     width: 100%;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     border: 1px solid black; 
     position: relative;
+    top: -55px; 
     
     
 
