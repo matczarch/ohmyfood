@@ -1,93 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content ="width=device-width, initial-scale=0.75, user-scalable=no"/>
-        <link rel="stylesheet" href="style.css"/>
-        <title>ohmyfood</title>
-    </head>
-    <body> 
-        <header>
-            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood"/>
-        </header>
-    <div id="local">
-        <img src="images/logo/map-marker-alt-solid.svg" alt="localisation"/>
-        <p> Paris, Belleville </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.75, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ohmyfood</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
+      </div>
+      <div class="local">
+        <div class="local-img">
+          <img src="images/logo/map-marker-alt-solid.svg" alt="localisation" />
+        </div>
+        <div class="local-text">
+          <p>Paris, Belleville</p>
+        </div>
+      </div>
+    </header>
+    <div class="info">
+      <h3>Réserver le menu qui vous convient</h3>
+      <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
+      <a href="#restaurant">Explorer nos restaurants </a>
     </div>
-    <div id="Info">
-        <h3> Réserver le menu qui vous convient </h3>
-        <p> Découvrez des restaurants d'exeption, séléctionnés par nos soins. </p>
-        <a href="#">Explorer nos restaurants </a>
+    <h2>Fonctionnement</h2>
+    <div class="fonct">
+      <ul>
+        <li>
+          <div class="fonct-etape">
+            <p>1</p>
+          </div>
+          <img
+            src="images/mobile-alt-solid (1)12.png" alt="choisissez un restaurant" />
+          <div class="fonct-text">
+            <p>Choisissez un restaurant</p>
+          </div>
+        </li>
+        <li>
+          <div class="fonct-etape">
+            <p>2</p>
+          </div>
+          <img src="ellipsis-h-solid13.png" alt="Composez votre menu" />
+          <div class="fonct-text">
+            <p>Composer votre menu</p>
+          </div>
+        </li>
+        <li>
+          <div class="fonct-etape">
+            <p>3</p>
+          </div>
+          <img src="images/store-solid14.png" alt="Dégustez au restaurant" />
+          <div class="fonct-text">
+            <p>Dégustez au restaurant</p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div id="fonctionnement">
-        <h2>Fonctionnement</h2>
-        <ul>
-            <li>
-                <p> 1 </p>
-                <img src="images/mobile-alt-solid (1)12.png" alt="choisissez un restaurant"/> 
-                <p> Choisissez un restaurant </p>
-            </li>
-            <li>
-                <p> 2 </p>
-                <img src="ellipsis-h-solid13.png" alt="Composez votre menu"/>
-                <p> Composer votre menu </p>
-            </li>
-            <li>
-                <p> 3 </p>
-                <img src="images/store-solid14.png" alt="Dégustez au restaurant"/>
-                <p> Dégustez au restaurant </p>
-            </li>
-        </ul>
-    </div>
-    <div id="restaurant">
-        <h2> Restaurants </h2>
-        <section id="Lapalette">
-            <a href="Menu1_palette_du_gout.html">
-            <div class="image-rest">
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout"/>
-            </div>
-            <h1> La palette du goût </h1>
-            <h4> Ménilmontant </h4>
-            </a>
-        </section>
-        <section id="Lanote">
-            <a href="Menu2_la_note_enchantee.html">
-            <div class="image-rest">
-                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
-            </div>
-            <h1> La note enchantée </h1>
-            <h4> Charone </h4>
-            </a>
-        </section>
-    <section id="alafrançaise">
+    <h2>Restaurants</h2>
+    <div class="rest">
+      <section class="Lapalette">
+        <a href="Menu1_palette_du_gout.html">
+          <div class="image-rest">
+            <img
+              src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="La palette du gout"
+            />
+          </div>
+          <div class="text-rest">
+            <h1>La palette du goût</h1>
+            <h4>Ménilmontant</h4>
+          </div>
+        </a>
+      </section>
+      <section id="Lanote">
+        <a href="Menu2_la_note_enchantee.html">
+          <div class="image-rest">
+            <img
+              src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="La note enchantée"
+            />
+          </div>
+          <div class="text-rest">
+            <h1>La note enchantée</h1>
+            <h4>Charone</h4>
+          </div>
+        </a>
+      </section>
+      <section id="alafrançaise">
         <a href="Menu3_a_la_franaise.html">
-        <div class="image-rest">
-            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française"/>
-        </div>
-        <h1> A la française </h1>
-        <h4> Cité Rouge </h4>
+          <div class="image-rest">
+            <img
+              src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="A la française"
+            />
+          </div>
+          <div class="text-rest">
+            <h1>A la française</h1>
+            <h4>Cité Rouge</h4>
+          </div>
         </a>
-    </section>
-    <section id="ledelice">
+      </section>
+      <section id="ledelice">
         <a href="Menu4_le_delice_des-sens.html">
-        <div class="image-rest">
-            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Les délice des sens"/>
-        </div>
-        <h1> Le délice des sens </h1>
-        <h4> Folie-Méricourt </h4>
+          <div class="image-rest">
+            <img
+              src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="Les délice des sens"
+            />
+          </div>
+          <div class="text-rest">
+            <h1>Le délice des sens</h1>
+            <h4>Folie-Méricourt</h4>
+          </div>
         </a>
-    </section>
+      </section>
     </div>
     <footer>
-        <h2>ohmyfood</h2>
-        <div id="lien">
-            <ul>
-                <li> <img src="images/utensils-solid15.png" alt="Proposer un restaurant"/> <a href="#"> Devenir un restaurant </a></li>
-                <li><img src="images/hands-helping-solid16.png" alt="Devenir partenaire"/> <a href="#"> Devenir partenaire </a>
-                <li><a href="#"> Mention legal </a>
-                <li><a href="#"> Contact </a>
-             </ul>
-        </div>
+      <h2>ohmyfood</h2>
+      <div id="lien">
+        <ul>
+          <li>
+            <img
+              src="images/utensils-solid15.png"
+              alt="Proposer un restaurant"
+            />
+            <a href="#"> Devenir un restaurant </a>
+          </li>
+          <li>
+            <img
+              src="images/hands-helping-solid16.png"
+              alt="Devenir partenaire"
+            />
+            <a href="#"> Devenir partenaire </a>
+          </li>
+
+          <li><a href="#"> Mention legal </a></li>
+          <li><a href="#"> Contact </a></li>
+        </ul>
+      </div>
     </footer>
-    </body>
+  </body>
 </html>
