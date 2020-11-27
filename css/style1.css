@@ -31,11 +31,10 @@ body {
 .le-menu {
   background-color: #ECEFF1;
   width: 100%;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  border: 1px solid black;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
   position: relative;
-  top: -55px;
+  top: -60px;
 }
 
 .le-menu .favorit {
@@ -47,9 +46,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .le-menu .favorit h1 {
@@ -62,8 +61,12 @@ body {
   margin-right: 20px;
 }
 
+.le-menu .favorit img:hover {
+  width: 12%;
+  height: auto;
+}
+
 .choix-1 {
-  border: 1px solid black;
   margin: 10px;
   background-color: white;
   border-radius: 20px;
@@ -71,14 +74,41 @@ body {
           box-shadow: 2px 2px 20px gray;
 }
 
+.choix-1 h2 {
+  padding-left: 15px;
+  padding-top: 20px;
+  margin: 0px;
+}
+
 .choix-1 .choix-1-texte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10px;
 }
 
 .choix-1 .choix-1-texte .c1 {
+  min-width: 100px;
   margin-right: 200px;
+}
+
+.choix-1 .choix-1-texte .prix {
+  width: 200px;
+  height: auto;
+  margin: 0px;
+  margin-left: 0px;
+  position: relative;
+  left: -20px;
+  padding-left: -20px;
 }
 
 footer {
