@@ -1,26 +1,23 @@
 @font-face {
   font-family: 'Roboto regular';
-  src: url("polices/Roboto/Roboto-Regular.otf");
+  src: url("polices/Roboto/Roboto-Regular.ttf");
   src: url("polices/Roboto/roboto-regular.woff") format("woff"), url("polices/Roboto/roboto-regular.eot") format("eot"), url("polices/Roboto/roboto-regular.svg") format("svg");
 }
 
 @font-face {
-  font-family: 'Shrikhand';
-  src: url("/Shrikhand-Regular.otf") format("otf");
-  src: url("/polices/Shrikhand/shrikhand-regular.woff") format("woff"), url("/polices/Shrikhand/shrikhand-regular.eot") format("eot"), url("/polices/Shrikhand/shrikhand-regular.svg") format("svg");
+  font-family: "Shrikhand regular";
+  src: url("polices/Shrikhand/shrikhand-regular.ttf") format("trueType");
+  src: url("polices/Shrikhand/shrikhand-regular.woff") format("woff"), url("polices/Shrikhand/shrikhand-regular.woff2") format("woff2"), url("polices/Shrikhand/shrikhand-regular.eot") format("eot"), url("polices/Shrikhand/shrikhand-regular.svg") format("svg");
 }
 
-p {
+body p {
   font-family: 'Roboto regular';
 }
 
-h2 {
+body h2 {
+  font-family: 'Roboto regular';
   white-space: nowrap;
   overflow: hidden;
-}
-
-h1 {
-  font-family: 'Shrikhand';
 }
 
 header {
@@ -102,6 +99,7 @@ body {
 
 .le-menu .favorit h1 {
   margin-left: 20px;
+  font-family: "Shrikhand regular";
 }
 
 .le-menu .favorit img {
