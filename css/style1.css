@@ -18,27 +18,25 @@ header {
           align-items: center;
 }
 
-header img {
-  width: 50%;
-  margin: auto;
-  margin-bottom: 20px;
+header .loh {
+  width: 500px;
+  margin-bottom: 15px;
 }
 
 header a {
-  width: 40px;
+  width: 30px;
   height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 10px;
-  border: 1px solid red;
 }
 
 header .retour {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40px;
+  width: 30px;
   height: auto;
 }
 
@@ -136,8 +134,61 @@ body {
   right: 30px;
 }
 
+.btn-commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.btn-commander .btn {
+  width: 150px;
+  text-align: center;
+  height: auto;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 50px;
+  font-family: Roboto;
+  border-radius: 50px;
+}
+
+.btn-commander :link {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-commander :hover {
+  color: #99E2D0;
+}
+
 footer {
-  background-color: #455A64;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  background-color: #263238;
+  padding-top: 5px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer h2 {
+  margin-left: 20px;
+  color: white;
 }
 
 footer img {
