@@ -10,12 +10,12 @@
   src: url("polices/Shrikhand/shrikhand-regular.woff") format("woff"), url("polices/Shrikhand/shrikhand-regular.woff2") format("woff2"), url("polices/Shrikhand/shrikhand-regular.eot") format("eot"), url("polices/Shrikhand/shrikhand-regular.svg") format("svg");
 }
 
-body p {
-  font-family: 'Roboto regular';
+p {
+  font-family: "Roboto regular";
 }
 
-body h2 {
-  font-family: 'Roboto regular';
+h2 {
+  font-family: "Roboto regular";
   white-space: nowrap;
   overflow: hidden;
 }
@@ -47,9 +47,10 @@ header a {
   max-height: 100%;
 }
 
-header .retour {
+header .return {
   margin-left: 10px;
   width: 30px;
+  height: auto;
   max-width: 100%;
   max-height: 100%;
   margin-top: 20px;
@@ -88,7 +89,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: black;
-  font-family: 'Roboto';
+  font-family: "Roboto regular";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,10 +107,20 @@ body {
   width: 5%;
   height: 50%;
   margin-right: 20px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .le-menu .favorit img:hover {
-  width: 6%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
   height: auto;
 }
 
@@ -184,17 +195,27 @@ body {
   font-weight: bold;
   padding: 20px;
   margin-top: 50px;
-  font-family: Roboto;
+  font-family: "Roboto regular";
   border-radius: 50px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
-.btn-commander :link {
+.btn-commander:link {
   color: white;
   text-decoration: none;
 }
 
-.btn-commander :hover {
+.btn-commander .btn:hover {
   color: #99E2D0;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
 footer {
