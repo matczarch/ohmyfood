@@ -108,46 +108,60 @@ body {
   font-family: Shrikhand regular;
 }
 
-.le-menu .favorit img {
+.le-menu .favorit .fa-heart {
   width: 5%;
   height: 50%;
   margin-right: 20px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  font-weight: bold;
 }
 
-.le-menu .favorit img:hover {
+.le-menu .favorit .fa-heart:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  height: auto;
 }
 
-.le-menu .favorit img:hover::after {
-  content: "";
+.le-menu .favorit .fa-heart:hover::before {
+  color: red;
   opacity: 1;
 }
 
-.le-menu .favorit::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.le-menu .favorit::before {
+  content: "\f004";
+  color: red;
   opacity: 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
+  font-weight: bold;
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+@-webkit-keyframes fadeINUp {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeINUp {
+  from {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.entree {
+  -webkit-animation: fadeINUp 2s;
+          animation: fadeINUp 2s;
 }
 
 .choix-1 {
