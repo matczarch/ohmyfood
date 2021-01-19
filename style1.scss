@@ -108,25 +108,34 @@ body{
             width: 5%;
             height: 50%; 
             margin-right: 20px;
-            background: red;  
             transform: scale(1);
             transition-property: transform;
             transition-duration: 300ms;
+            transform-origin: top;
 
         }
         img:hover
         {
-            transform: scale(1.20);
             cursor: pointer;
+            transform: scale(1.20);
             height: auto;
-            background-color: red;
+            &::after {
+                content: "";
+                opacity: 1; 
+            }
         }
-
+        &::after {
+            content:"";
+            position: absolute;
+            top: 0;
+            right: 0; 
+            bottom: 0; 
+            left: 0;
+            opacity: 0; 
+            background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+            transition: opacity 250ms; 
+        }
     }
-}
-&::after {
-    content: "";
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 .choix-1
 { 
