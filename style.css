@@ -144,13 +144,17 @@ header .local .local-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  align-items: center;
 }
 
-.fonct img {
-  width: 20px;
-  margin: 20px;
-  height: 30px;
+.fonct .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  border: 1px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fonct .fonct-text p {
@@ -159,19 +163,19 @@ header .local .local-text {
   font-family: Roboto;
 }
 
-.fonct .fonct-etape {
+.fonct .fonct-numb {
   width: 30px;
   height: 30px;
   background-color: #9356dc;
   position: relative;
-  left: -15px;
+  left: -20px;
   top: 20px;
   overflow: hidden;
   font-size: 0.8em;
   border-radius: 50%;
 }
 
-.fonct .fonct-etape p {
+.fonct .fonct-numb p {
   position: absolute;
   top: -9px;
   color: white;
@@ -189,11 +193,18 @@ header .local .local-text {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   margin-top: 20px;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 15px grey;
           box-shadow: 2px 2px 15px grey;
+}
+
+.fonct li:hover {
+  background-color: purple;
 }
 
 .rest {
@@ -247,8 +258,9 @@ header .local .local-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .rest section .info-rest .text-rest {
@@ -275,19 +287,20 @@ header .local .local-text {
   margin: 5px 0px 0px 0px;
 }
 
-.rest section .info-rest .fav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.rest section .info-rest .fav .far.fa-heart {
+  margin-right: 10px;
+  font-size: 30px;
   position: relative;
-  width: 40px;
+  left: 10px;
 }
 
-.rest section .info-rest .fav img:hover::after {
-  content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+.rest section .info-rest .fav .far.fa-heart:hover {
+  color: red;
   opacity: 1;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 
 .rest img {
@@ -326,8 +339,6 @@ footer ul {
 footer img {
   width: 15px;
   height: auto;
-  margin-right: 10px;
-  border: 1px solid red;
 }
 
 footer a {

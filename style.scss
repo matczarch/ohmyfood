@@ -102,30 +102,41 @@ header {
 }
 .fonct {
   display: flex;
-  
   justify-content: center;
   margin:0px; 
   padding:0px; 
   align-items: center;
-  align-items: center; 
-  
 
-  img {
-    width: 20px;
-    margin: 20px;
-    height: 30px;
-  }
+  .icon
+  {
+    display: flex; 
+    width: 25px; 
+    border: 1px solid black;
+    justify-content: center;
+  // i {
+  //   color: grey; 
+  //   font-size: 25px;
+  // }
+  // .fa-mobile-alt, .fa-store
+  // {
+  //   margin: 20px 20px 20px 20px;
+  // }
+  // .fa-list 
+  // {
+  //   margin: 20px 20px 20px 10px; 
+  // }
+}
   .fonct-text p {
     margin: 25px;
     font-weight: bold;
     font-family: Roboto;
   }
-  .fonct-etape {
+  .fonct-numb {
     width: 30px;
     height: 30px;
     background-color: #9356dc;
     position: relative;
-    left: -15px;
+    left: -20px;
     top: 20px;
     overflow: hidden;
     font-size: 0.8em;
@@ -134,21 +145,28 @@ header {
     p {
       position: absolute;
       top: -9px;
-
       color: white;
       font-size: 15px;
       left: 11px;
     }
+
   }
   li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start; 
     width: 100%;
     margin-top: 20px; 
     border-radius: 15px;
     box-shadow: 2px 2px 15px grey;
+    &:hover 
+    {
+      background-color: purple; 
+      
+    }
   }
+
 }
 .rest {
   display: flex;
@@ -180,7 +198,7 @@ header {
     .info-rest {
       display: flex; 
       align-items: center; 
-      justify-content: space-around;
+      justify-content: space-evenly;
       .text-rest {
         display: flex;
         position: relative; 
@@ -197,18 +215,25 @@ header {
           margin: 5px 0px 0px 0px;
         }
       }
-      .fav {
-        display: flex; 
-        position: relative;  
-        width: 40px;
-        img:hover {
-          &::after {
-            content: ""; 
+      .fav 
+      {
+        .far.fa-heart
+        {  
+          margin-right: 10px;
+          font-size: 30px;
+          position: relative; 
+          left: 10px;  
            
-            opacity: 1;
-            transition
+          &:hover
+          {                    
+              color: red; 
+              opacity: 1;
+              font-weight: bold;
+              cursor: pointer;
+              transition: color 250ms; 
+          
           }
-        }
+      }
     }
 
   }
@@ -240,9 +265,7 @@ footer
     img 
     {
         width: 15px; 
-        height: auto; 
-        margin-right: 10px;
-        border: 1px solid red; 
+        height: auto;  
     }
     a
     {

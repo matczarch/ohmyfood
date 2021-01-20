@@ -98,9 +98,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .le-menu .favorit h1 {
@@ -108,29 +107,20 @@ body {
   font-family: Shrikhand regular;
 }
 
-.le-menu .favorit .fa-heart {
-  width: 5%;
+.le-menu .favorit .far.fa-heart {
+  font-size: 100px;
+  width: 100px;
   height: 50%;
   margin-right: 20px;
-  font-weight: bold;
 }
 
-.le-menu .favorit .fa-heart:hover {
-  cursor: pointer;
-}
-
-.le-menu .favorit .fa-heart:hover::before {
+.le-menu .favorit .far.fa-heart:active {
   color: red;
   opacity: 1;
-}
-
-.le-menu .favorit::before {
-  content: "\f004";
-  color: red;
-  opacity: 0;
   font-weight: bold;
-  -webkit-transition: color 1s ease-out;
-  transition: color 1s ease-out;
+  cursor: pointer;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 
 @-webkit-keyframes fadeINUp {
@@ -159,9 +149,43 @@ body {
   }
 }
 
-.entree {
-  -webkit-animation: fadeINUp 2s;
-          animation: fadeINUp 2s;
+.ess {
+  -webkit-transition: all 0.2 linear 0s;
+  transition: all 0.2 linear 0s;
+}
+
+.ess:before {
+  content: "\f0a4";
+  font-family: FontAwesome;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0px 6px 6px 0px;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  text-align: center;
+}
+
+.ess:hover {
+  text-indent: -30px;
+}
+
+.ess:hover:before {
+  right: 0;
+  text-indent: 0px;
 }
 
 .choix-1 {
@@ -174,6 +198,8 @@ body {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  -webkit-animation: fadeINUp 2s;
+          animation: fadeINUp 2s;
 }
 
 .choix-1 h2 {
