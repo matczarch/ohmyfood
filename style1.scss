@@ -135,10 +135,7 @@ body{
         opacity: 1;
     }
 }
-.ess {
-    transition: all 0.2 linear 0s; 
 
-}
 .choix-1
 { 
     
@@ -148,36 +145,34 @@ body{
     border-radius: 20px;
     box-shadow: 2px 2px 10px gray;
     align-items: left;
-    animation: fadeINUp 2s;
+    // animation: fadeINUp 2s;
     // test de transition pour le bouton validation. 
     transition: all 0.2s linear 0s;
-    &:before {
+    &::before{
         content: "\f058";
+        color: white;
         font-family: FontAwesome;
-        font-size: 15px;
+        font-size: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 0;
+        top: 0; 
         right: -30px;
-        width: 30px;
+        width: 100px;
         height: 100%;
-       
-    
         transition: all 0.2s linear 0s;
-        text-align: center;
       }
   &:hover {
     .prix {
-        text-indent: -150px;
+        text-indent: -160px;
     }
     
-    &:before {
-        content: "\f058";
-        right: 0;
+    &::before {
+        opacity: 1; 
         text-indent: 0px;
         background-color: greenyellow;
+        
     }
   }
 
