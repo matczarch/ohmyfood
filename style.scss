@@ -100,73 +100,59 @@ header {
   }
  
 }
+
 .fonct {
-  display: flex;
-  justify-content: center;
-  margin:0px; 
-  padding:0px; 
+  display: flex; 
+  flex-direction: column;
   align-items: center;
-
-  .icon
+  i
   {
+    transform: scale(0.9,1);
+  }
+  
+  .chois, .composed, .degust {
     display: flex; 
-    width: 25px; 
-    border: 1px solid black;
-    justify-content: center;
-  // i {
-  //   color: grey; 
-  //   font-size: 25px;
-  // }
-  // .fa-mobile-alt, .fa-store
-  // {
-  //   margin: 20px 20px 20px 20px;
-  // }
-  // .fa-list 
-  // {
-  //   margin: 20px 20px 20px 10px; 
-  // }
-}
-  .fonct-text p {
-    margin: 25px;
-    font-weight: bold;
-    font-family: Roboto;
-  }
-  .fonct-numb {
-    width: 30px;
-    height: 30px;
-    background-color: #9356dc;
-    position: relative;
-    left: -20px;
-    top: 20px;
-    overflow: hidden;
-    font-size: 0.8em;
-    border-radius: 50%;
-
-    p {
-      position: absolute;
-      top: -9px;
-      color: white;
-      font-size: 15px;
-      left: 11px;
-    }
-
-  }
-  li {
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start; 
-    width: 100%;
-    margin-top: 20px; 
-    border-radius: 15px;
     box-shadow: 2px 2px 15px grey;
-    &:hover 
-    {
-      background-color: purple; 
-      
+    border-radius: 15px;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+
+    .fonct-number {
+      width: 30px;
+      height: 30px;
+      font-size: 0.8em;
+      font-weight: bold;
+      color: white; 
+      border-radius: 50%;
+      background-color: #9356dc;
+      position: relative; 
+      left: -15px; 
+      overflow: hidden;
+      p {
+        position: relative; 
+        top: -7px; 
+        left: 12px;
+      }
+    }
+    .icon {
+      width: 30px;
+      font-size: 25px;
+      color: grey;
+      margin: 20px; 
+    }
+    .fonct-text {
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: #F5EDFF;
+      i {
+        color: #9356DC;
+      }
     }
   }
-
+  .degust { margin-bottom: 100px;}
 }
 .rest {
   display: flex;
@@ -230,7 +216,7 @@ header {
               opacity: 1;
               font-weight: bold;
               cursor: pointer;
-              transition: color 250ms; 
+              transition: color 400ms; 
           
           }
       }

@@ -1,3 +1,4 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @font-face
 {
     font-family: Shrikhand regular;
@@ -105,17 +106,17 @@ body{
 
         .far.fa-heart
         { 
-            font-size: 100px; 
+            font-size: 70px; 
             width: 100px;
             height: 50%; 
             margin-right: 20px;
-            &:active
+            &:hover
             {                    
-                color: red; 
+                color: red;
+                font-weight: bold; 
                 opacity: 1;
-                font-weight: bold;
                 cursor: pointer;
-                transition: color 250ms; 
+                transition: color 400ms; 
             
             }
         }
@@ -136,30 +137,7 @@ body{
 }
 .ess {
     transition: all 0.2 linear 0s; 
-    &:before {
-            content: "\f0a4";
-            font-family: FontAwesome;
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            right: -30px;
-            width: 30px;
-            height: 100%;
-            background-color: rgba(#fff,0.3);
-            border-radius: 0px 6px 6px 0px;
-            transition: all 0.2s linear 0s;
-            text-align: center;
-    } 
-    &:hover {
-        text-indent: -30px; 
-        &:before {
-            right: 0;
-            text-indent: 0px; 
-        }
-    }
+
 }
 .choix-1
 { 
@@ -171,6 +149,39 @@ body{
     box-shadow: 2px 2px 10px gray;
     align-items: left;
     animation: fadeINUp 2s;
+    // test de transition pour le bouton validation. 
+    transition: all 0.2s linear 0s;
+    &:before {
+        content: "\f058";
+        font-family: FontAwesome;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: -30px;
+        width: 30px;
+        height: 100%;
+       
+    
+        transition: all 0.2s linear 0s;
+        text-align: center;
+      }
+  &:hover {
+    .prix {
+        text-indent: -150px;
+    }
+    
+    &:before {
+        content: "\f058";
+        right: 0;
+        text-indent: 0px;
+        background-color: greenyellow;
+    }
+  }
+
+    // fin du test 
 
     h2 
     {

@@ -136,54 +136,21 @@ header .local .local-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0px;
-  padding: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.fonct .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 25px;
-  border: 1px solid black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.fonct i {
+  -webkit-transform: scale(0.9, 1);
+          transform: scale(0.9, 1);
 }
 
-.fonct .fonct-text p {
-  margin: 25px;
-  font-weight: bold;
-  font-family: Roboto;
-}
-
-.fonct .fonct-numb {
-  width: 30px;
-  height: 30px;
-  background-color: #9356dc;
-  position: relative;
-  left: -20px;
-  top: 20px;
-  overflow: hidden;
-  font-size: 0.8em;
-  border-radius: 50%;
-}
-
-.fonct .fonct-numb p {
-  position: absolute;
-  top: -9px;
-  color: white;
-  font-size: 15px;
-  left: 11px;
-}
-
-.fonct li {
+.fonct .chois, .fonct .composed, .fonct .degust {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,20 +158,56 @@ header .local .local-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 15px;
   -webkit-box-shadow: 2px 2px 15px grey;
           box-shadow: 2px 2px 15px grey;
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 10px;
 }
 
-.fonct li:hover {
-  background-color: purple;
+.fonct .chois .fonct-number, .fonct .composed .fonct-number, .fonct .degust .fonct-number {
+  width: 30px;
+  height: 30px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  background-color: #9356dc;
+  position: relative;
+  left: -15px;
+  overflow: hidden;
+}
+
+.fonct .chois .fonct-number p, .fonct .composed .fonct-number p, .fonct .degust .fonct-number p {
+  position: relative;
+  top: -7px;
+  left: 12px;
+}
+
+.fonct .chois .icon, .fonct .composed .icon, .fonct .degust .icon {
+  width: 30px;
+  font-size: 25px;
+  color: grey;
+  margin: 20px;
+}
+
+.fonct .chois .fonct-text, .fonct .composed .fonct-text, .fonct .degust .fonct-text {
+  font-weight: bold;
+}
+
+.fonct .chois:hover, .fonct .composed:hover, .fonct .degust:hover {
+  background-color: #F5EDFF;
+}
+
+.fonct .chois:hover i, .fonct .composed:hover i, .fonct .degust:hover i {
+  color: #9356DC;
+}
+
+.fonct .degust {
+  margin-bottom: 100px;
 }
 
 .rest {
@@ -299,8 +302,8 @@ header .local .local-text {
   opacity: 1;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition: color 250ms;
-  transition: color 250ms;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
 }
 
 .rest img {
