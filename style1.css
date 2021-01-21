@@ -150,8 +150,31 @@ body {
   }
 }
 
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .choix-1 {
   margin: 10px;
+  position: relative;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 20px;
@@ -160,13 +183,15 @@ body {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  -webkit-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
 }
 
-.choix-1::before {
+.choix-1:before {
   content: "\f058";
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
   color: white;
+  font-size: 50px;
+  opacity: 0;
   font-family: FontAwesome;
   font-size: 50px;
   display: -webkit-box;
@@ -180,21 +205,31 @@ body {
           justify-content: center;
   position: absolute;
   top: 0;
-  right: -30px;
+  right: 0;
   width: 100px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   height: 100%;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
 
 .choix-1:hover .prix {
-  text-indent: -160px;
+  text-indent: -110px;
+}
+
+.choix-1:hover .c1 {
+  border: 1px solid black;
+  overflow: hidden;
 }
 
 .choix-1:hover::before {
   opacity: 1;
   text-indent: 0px;
+  right: 0;
   background-color: greenyellow;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
 
 .choix-1 h2 {

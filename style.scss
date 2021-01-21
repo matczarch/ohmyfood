@@ -93,7 +93,8 @@ header {
     .btn-1:hover
     {
       color: white; 
-      transform: scale(1.15); 
+      // transform: scale(1.15);
+      opacity: 0.85; 
       transition-duration: 400ms;
       text-decoration:none; 
     }

@@ -135,11 +135,20 @@ body{
         opacity: 1;
     }
 }
+@keyframes rotation {
+    from {
+        transform: rotate(360deg);  
+    }
+    to {
+        transform: rotate(0deg); 
+    }
+}
 
 .choix-1
 { 
     
-    margin: 10px; 
+    margin: 10px;
+    position: relative;
     margin-bottom: 20px;
     background-color: white;
     border-radius: 20px;
@@ -147,32 +156,41 @@ body{
     align-items: left;
     // animation: fadeINUp 2s;
     // test de transition pour le bouton validation. 
-    transition: all 0.2s linear 0s;
-    &::before{
+    &:before {
         content: "\f058";
-        color: white;
+        transform: translateX(100px);
+        color: white; 
+        font-size: 50px; 
+        opacity: 0; 
         font-family: FontAwesome;
         font-size: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 0; 
-        right: -30px;
+        top: 0;
+        right: 0;
         width: 100px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px; 
         height: 100%;
         transition: all 0.2s linear 0s;
       }
   &:hover {
     .prix {
-        text-indent: -160px;
+        text-indent: -110px;
+    }
+    .c1 {
+        border: 1px solid black;
+        overflow: hidden;
     }
     
     &::before {
         opacity: 1; 
         text-indent: 0px;
-        background-color: greenyellow;
-        
+        right: 0;
+        background-color: greenyellow; 
+        transform: translateX(0px);
     }
   }
 
