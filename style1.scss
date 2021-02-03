@@ -137,10 +137,13 @@ body{
 }
 @keyframes rotation {
     from {
-        transform: rotate(360deg);  
+        transform: rotate(180deg);
+        text-indent: 0px;
+        right: -100px;   
     }
     to {
         transform: rotate(0deg); 
+        text-indent: -110px; 
     }
 }
 
@@ -154,11 +157,12 @@ body{
     border-radius: 20px;
     box-shadow: 2px 2px 10px gray;
     align-items: left;
-    // animation: fadeINUp 2s;
-    // test de transition pour le bouton validation. 
+    animation: fadeINUp 2s;
+    overflow: hidden;
+
+    // test de transition pour le bouton validation.
     &:before {
         content: "\f058";
-        transform: translateX(100px);
         color: white; 
         font-size: 50px; 
         opacity: 0; 
@@ -169,12 +173,17 @@ body{
         justify-content: center;
         position: absolute;
         top: 0;
-        right: 0;
+        right: -100px;
         width: 100px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px; 
+        background-color: #96D9C6;
+        background-position: left;
         height: 100%;
         transition: all 0.2s linear 0s;
+        animation: rotation, 0.5s; 
+
+         
       }
   &:hover {
     .prix {
@@ -182,15 +191,14 @@ body{
     }
     .c1 {
         border: 1px solid black;
-        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
-    &::before {
+    &:before {
         opacity: 1; 
         text-indent: 0px;
         right: 0;
-        background-color: greenyellow; 
-        transform: translateX(0px);
+        
     }
   }
 
@@ -236,12 +244,13 @@ body{
     justify-content: center;
     margin: 30px;
     font-weight: bold;
-    font-size: 20px; 
+    font-size: 20px;  
     
  
     .btn {
          
         width: 200px; 
+        color: white; 
         text-align:center;
         height: auto; 
         background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -249,9 +258,7 @@ body{
         padding: 20px;
         margin-top: 50px;   
         font-family: $text;
-        border-radius: 50px;  
-        transform: scale(1);
-        transition-property: transform;  
+        border-radius: 50px;   
         text-decoration: none;
     }
 
@@ -262,9 +269,8 @@ body{
     }
     .btn:hover 
     {
-        color: #99E2D0;
-        transform: scale(1.15);
-        transition-duration: 400ms;
+        color: white;
+        opacity: 0.85;
     }
 }
 footer
