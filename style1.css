@@ -154,13 +154,10 @@ body {
   from {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    text-indent: 0px;
-    right: -100px;
   }
   to {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    text-indent: -110px;
   }
 }
 
@@ -168,13 +165,10 @@ body {
   from {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    text-indent: 0px;
-    right: -100px;
   }
   to {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    text-indent: -110px;
   }
 }
 
@@ -192,6 +186,8 @@ body {
   -webkit-animation: fadeINUp 2s;
           animation: fadeINUp 2s;
   overflow: hidden;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
 }
 
 .choix-1:before {
@@ -221,23 +217,26 @@ body {
   height: 100%;
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
-  -webkit-animation: rotation, 0.5s;
-          animation: rotation, 0.5s;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .choix-1:hover .prix {
   text-indent: -110px;
 }
 
-.choix-1:hover .c1 {
-  border: 1px solid black;
-  text-overflow: ellipsis;
-}
-
 .choix-1:hover:before {
   opacity: 1;
   text-indent: 0px;
   right: 0;
+  -webkit-animation: rotation 0.5s;
+          animation: rotation 0.5s;
+}
+
+.choix-1:hover:before .c1 {
+  width: 100px;
+  text-overflow: ellipsis;
 }
 
 .choix-1 h2 {
@@ -254,6 +253,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -266,15 +266,14 @@ body {
 }
 
 .choix-1 .choix-1-texte .c1 {
+  float: left;
   width: auto;
-  padding: 0px 0px 0px 0px;
+  min-width: 100px;
 }
 
 .choix-1 .choix-1-texte .prix {
-  width: auto;
-  height: auto;
   margin: 0px;
-  position: absolute;
+  position: relative;
   right: 30px;
   padding: 0px;
 }
